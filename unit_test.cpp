@@ -1,4 +1,4 @@
- fgdvvvvvvvvvv ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // ECE 3574 Exercise: CMake using Catch - starter code
 //
 #define CATCH_CONFIG_MAIN  // This line tells Catch to provide a main() function
@@ -45,9 +45,9 @@ TEST_CASE("treap unit test3", "[treap]") {
 	root = insert(root, 20); 
 
 
-	REQUIRE(search(root, 20) == NULL);
-	REQUIRE(search(root, 30) == NULL);
-	REQUIRE(search(root, 50) == NULL);
+	REQUIRE(search(root,20) ->key == 20);
+	REQUIRE(search(root, 30)->key == 30);
+	REQUIRE(search(root, 50)->key == 50);2
 	REQUIRE(search(root, 60) == NULL);
 	REQUIRE(search(root, 40) == NULL);
 } 
