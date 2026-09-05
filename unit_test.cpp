@@ -47,7 +47,7 @@ TEST_CASE("treap unit test3", "[treap]") {
 
 	REQUIRE(search(root,20) ->key == 20);
 	REQUIRE(search(root, 30)->key == 30);
-	REQUIRE(search(root, 50)->key == 50);2
+	REQUIRE(search(root, 50)->key == 50);
 	REQUIRE(search(root, 60) == NULL);
 	REQUIRE(search(root, 40) == NULL);
 } 
